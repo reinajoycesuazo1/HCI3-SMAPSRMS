@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Modal Container */
+.modal {
+    background-color: #888;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c2c2c;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Close Button */
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.modal-body select {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: linear-gradient(to right, #fff, #ddd);
+    appearance: none;
+    -webkit-appearance: none;
+    margin-bottom: 15px;
+}
+
+.modal-body button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.modal-body button:hover {
+    background-color: #555;
+}

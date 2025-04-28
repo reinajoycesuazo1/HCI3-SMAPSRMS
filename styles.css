@@ -1,0 +1,168 @@
+body {
+    display: flex; /* Para ma-center ang content sa page */
+    flex-direction: column; /* Arranges elements top to bottom */
+    align-items: center; /* Ga-center horizontally */
+    justify-content: space-between; /* Nagbutang og space sa taas ug ubos */
+    min-height: 100vh; /* Para full-screen height siya */
+    background: url('img/bg.png') no-repeat center center/cover; /* Nice ni para di mag-repeat ang background */
+    margin: 0; /* Para walay unwanted space sa edges */
+    font-family: Arial, sans-serif; /* Safe and readable font */
+    color: white; /* White text para readable sa dark background */
+    text-align: center; /* Ga-center tanan text */
+}
+
+.led-banner {
+    background-color: rgb(65, 65, 68); /* Dark gray background for LED effect */
+    color: white; /* White text para klaro */
+    text-align: center; /* Ga-center ang text */
+    padding: 15px 10px; /* Proper padding para di compressed */
+    font-size: 18px; /* Sakto nga size for readability */
+    font-weight: bold; /* Para ma-emphasize ang text */
+    overflow: hidden; /* Para walay overflow issues */
+    width: 100%; /* Full width siya para ma-cover ang page */
+    border-top: 5px solid rgb(47, 46, 46); /* Dark border para sharp ang edges */
+    border-bottom: 5px solid rgb(47, 46, 46); /* Same sa taas, uniform look */
+    position: relative; /* Positioning for animations */
+    margin-top: 30px; /* Gihatagan og spacing from the top */
+}
+
+.led-banner span {
+    display: inline-block; /* Para smooth ang scrolling effect */
+    white-space: nowrap; /* Avoid text wrapping */
+    animation: scrollingBanner 10s linear infinite; /* Continuous scrolling effect */
+}
+
+@keyframes scrollingBanner {
+    0% { transform: translateX(100%); } /* Gikan sa right */
+    100% { transform: translateX(-100%); } /* Pa-left movement */
+}
+
+.container {
+    background: rgba(158, 153, 153, 0.7); /* Light gray transparency for contrast */
+    padding: 2rem; /* Spacing inside the container */
+    border-radius: 1.5rem; /* Smooth rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for a floating effect */
+    width: 15rem; /* Fixed width */
+    height: 18rem; /* Fixed height */
+}
+
+.login-box {
+    text-align: center; /* Center tanan sulod */
+}
+
+.login-title {
+    background: #393a3c; /* Dark gray header */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Classic font */
+    margin: 0; /* Wala’y extra spacing */
+    color: white; /* White text for contrast */
+    font-size: medium; /* Sakto nga text size */
+    padding: 0.5rem; /* Para di mugbo ang title */
+    border-radius: 0.25rem; /* Light rounding for smooth edges */
+}
+
+.icon-container {
+    margin-bottom: 1.5rem; /* Space below the icon */
+}
+
+.icon {
+    font-size: 3.5rem; /* Dako ang icon for visibility */
+    margin-top: 1rem; /* Space sa taas */
+    color: white; /* White para mu-stand out */
+}
+
+.input-group {
+    margin-bottom: 1rem; /* Spacing per input field */
+}
+
+.input-group input {
+    width: 100%; /* Full width para uniform */
+    padding: 0.5rem; /* Sakto nga spacing */
+    border-radius: 0.25rem; /* Light rounding */
+    border: 1px solid #131414; /* Dark border para defined */
+    box-sizing: border-box; /* Para di mag-overflow sa container */
+}
+
+.relative {
+    position: relative; /* Para sa eye-icon positioning */
+}
+
+.eye-icon {
+    position: absolute; /* Para mag-overlay sa input */
+    right: 0.75rem; /* Ibutang sa right side */
+    top: 0.75rem; /* Sakto nga spacing */
+    color: #37393b; /* Dark gray color */
+    cursor: pointer; /* Para clickable siya */
+}
+
+.checkbox-group {
+    display: flex; /* Para inline ang checkbox ug label */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Centered horizontally */
+    margin-bottom: 1rem; /* Space below */
+    color: #1b1c1c; /* Dark gray text */
+}
+
+.checkbox-group input {
+    margin-right: 0.5rem; /* Space sa checkbox ug label */
+}
+
+.checkbox-group label {
+    color: white; /* White text para readable */
+}
+
+.login-button {
+    width: 100%; /* Full width */
+    background: #393a3c; /* Dark background */
+    color: white; /* White text */
+    padding: 0.5rem; /* Sakto nga spacing */
+    border-radius: 1.25rem; /* Rounded button */
+    border: none; /* Wala’y border */
+    cursor: pointer; /* Para clickable */
+    transition: 0.3s; /* Smooth transition */
+}
+
+.login-button:hover {
+    background: #2b2c2e; /* Darker hover effect */
+}
+
+.login-wrapper {
+    display: flex; /* Arrange elements side by side */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Para responsive */
+    gap: 5rem; /* Space between elements */
+}
+
+.logo-left {
+    width: 20rem; /* Fixed width */
+    height: auto; /* Auto height */
+    margin-left: 5rem; /* Space from left */
+    margin-right: 5rem; /* Space from right */
+}
+
+.logo-right {
+    width: 30rem; /* Fixed width */
+    height: auto; /* Auto height */
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.7); /* Light transparent footer */
+    width: 100%; /* Full width */
+    padding: 1rem; /* Padding inside */
+    text-align: center; /* Center ang text */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2rem; /* Sakto nga text size */
+    color: #000; /* Black text */
+}
+
+footer a {
+    color: #000; /* Black text */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline sa hover */
+}

@@ -1,0 +1,300 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    background-color: #faf8f8;
+    color: rgb(15, 14, 14);
+    flex-wrap: wrap;
+    }
+    
+    header h1 {
+    font-size: 2.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 15.89px;
+    }
+    
+    .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    }
+    
+.html, body {
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: url('img/bg2.png') no-repeat center center fixed;
+    background-size: cover;
+    }
+    
+    .logo-left img {
+    width: 70px;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+    margin-left: 40px;
+    margin-right: 20px;
+    }
+    
+    .logo-right img {
+    width: 160px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 2px;
+    }
+    
+    
+    .user-profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: rgb(146, 146, 146); 
+        padding: 10px 60px;
+        height: 100%; 
+        border-left: 2px;
+        border-right: 2px;  /* Push the background to the right edge of the container */
+        width: 100%; /* Adjust width to fit within the container */
+        max-width: calc(100% - 5px); /* Full width of viewport */
+        flex-grow: 1;
+    }
+    
+    .profile-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Aligns items to the left */;
+        padding: 10px;
+        width: calc(100% + 5px);
+        background-color: rgb(146, 146, 146);
+        box-sizing: border-box; 
+    }
+
+    .profile-icon {
+        width: 60px;
+        height: 50px;
+        margin-right: 2px; /* Space between icon and text */
+        border-radius: 50%; /* Rounded corners */
+    }
+    
+            .user-name {
+                font-size: 18px;
+                font-weight: bold;
+                margin-right: -20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: white;
+
+
+                .profile-menu-container ul {
+                    list-style-type: none; /* Remove bullet points */
+                    padding: 0; /* Remove default padding */
+                }
+                
+                .profile-menu-container ul li {
+                    margin: 1px 0; /* Add some space between the items */
+                }
+                }
+                
+                .profile-menu-container ul li a {
+                    text-decoration: none; /* Remove underline from links */
+                    color: #007bff; /* Default link color */
+                    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+                    
+                }
+                
+    /* Baptismal Records Style Dropdown */
+    .dropdown-menu {
+        position: fixed;
+        top: 60px;
+        right: 20px;
+        min-width: 200px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+        padding: 5px 0;
+    }
+    
+    .dropdown-item {
+        display: block;
+        padding: 8px 15px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .dropdown-item:hover {
+        background: #f2f2f2;
+    }
+    
+    .dropdown-item i {
+        margin-right: 10px;
+        color: #666;
+    }
+    
+    /* Action buttons */
+    .view-btn { background: #4CAF50; color: white; }
+    .edit-btn { background: #2196F3; color: white; }
+    .delete-btn { background: #f44336; color: white; }
+                
+            
+    nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    }
+    nav ul li a i {
+    margin-right: 5px;
+            
+    }
+    main {
+    text-align: center;
+    margin: 20px;
+    flex-grow: 1;
+    min-height: calc(100vh - 120px); /* Adjusted to fit the footer */
+    }
+            
+    .background-image {
+    width: 100%;
+    height: calc(100vh - 150px);
+    }
+            
+    
+    footer {
+    text-align: center;
+    padding: 1x;
+    background-color: #fdfcfc;
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+            
+    footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.30rem;
+    
+    }
+    @media (max-width: 768px) {
+                
+    header {
+    flex-direction: column;
+    text-align: center;
+    }
+    
+    .logo-container {
+    flex-direction: column;
+    align-items: center;
+    }
+    header h1 {
+    font-size: 1.5rem;
+    }
+    
+    }
+    .logo-left img {
+    width: 70px;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+     }
+    
+    .logo-right img {
+    width: 70px;
+    height: auto;
+    max-height: 160px;
+    object-fit: contain;
+    margin-left: 30px;
+    margin-right: 20px;
+    }
+    
+    .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #585656;
+    padding: 0;
+    width: 100%; /* Ensure it takes the full width */
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 0; /* Remove any extra padding */
+
+    
+                
+    }
+            
+    .search-bar {
+    display: flex;
+    position: relative;
+    display: flex;
+    background-color: rgb(146, 146, 146); /* Search bar background */
+    padding: 15px 10px;
+    height: 100%; /* Match navigation height */
+    border-left: 2px ;/* Left boundary */
+    border-right: 2px; /* Right boundary */
+        
+     }
+    
+    .search-bar input {
+    padding: 10px 40px 10px 20px;
+    width: 350px;
+    height: 20px;
+    background-color: rgb(49, 46, 46); /* Gray background dapat */
+    border: 1.5px solid white; /* White border ni hah*/
+    border-radius: 30px;
+    outline: none;
+    color: white; 
+    }
+    
+    .search-bar input::placeholder {
+    color: white; /* White placeholder text ni */
+    opacity: 0.8;
+    }
+    
+    
+    .search-bar button {
+    position: absolute;
+    right: 5px; /* Kadto ning maadjust ang position inside*/
+    top: 45%;
+    transform: translateY(-50%);
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 37px;
+    height: 37px;
+    
+    }
+    .search-bar button img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%; 
+    margin-left: -12px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    margin-right: -5px;
+    }
+    
+    nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    nav ul li {
+    margin: 0 27px;
+    }
+    
+    
+    

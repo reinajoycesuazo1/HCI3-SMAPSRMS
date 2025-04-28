@@ -1,0 +1,153 @@
+body{ 
+    background: url('img/bg2.png') no-repeat center center/cover; /* Para naa'y background image, centered and cover sa page */
+    background-size: cover; /* I-cover gyud ang whole background, no empty spaces */
+}
+
+.go-back {
+    font-family: Arial, Helvetica, sans-serif; /* Nice clean font for the "Go Back" button */
+    background-color: #4CAF50; /* Green background, fresh kaayo tan-awon */
+    color: white; /* White text para klaro sa green */
+    padding: 10px 18px; /* Padding para dili compressed tan-awon ang button */
+    text-decoration: none; /* Wala'y underline ang button */
+    border-radius: 5px; /* Gamay nga curve sa edges para soft tan-awon */
+    font-size: 16px; /* Sakto ra nga font size, dili gamay or dako kaayo */
+}
+
+.go-back:hover {
+    background-color: #45a049; /* Pag-hover, mas darker gamay ang green para interactive */
+}
+
+.form-container {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Formal ug classic nga font */
+    background-color: #ffffff; /* White background para clean and neat */
+    padding: 30px; /* Sulod nga space para dili cramped ang contents */
+    margin: 20px auto; /* Centered ang form horizontally */
+    max-width: 100%; /* Di mulapas og 100% width sa container */
+    width: 100%; /* Full width pero respeto sa max-width */
+    max-width: 600px; /* Limit lang to 600px para nice tan-awon sa wide screens */
+    border-radius: 15px; /* Curved edges para soft ug friendly design */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gamit og shadow for depth effect */
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px 15px; /* Mas gamay na padding sa small screens para mobile friendly */
+        margin: 10px; /* Gamay ra margin para efficient ang space sa small screens */
+        max-width: 100%; /* Stay full width gyapon sa mobile */
+        width: 100%; /* Full width para di mabungkag ang layout */
+    }
+}
+
+/* Header */
+.form-container header h2 {
+    text-align: center; /* Centered ang header title */
+    color: #333; /* Dark gray color sa text, not pure black, soft sa mata */
+    margin-bottom: 20px; /* Space below sa title */
+}
+
+/* Sections */
+.section {
+    background-color: #e6f2ff; /* Light blue background para cool ug soothing ang section */
+    padding: 20px; /* Comfortable padding sa sulod sa section */
+    margin-bottom: 20px; /* Space between sections */
+    border-radius: 10px; /* Curved edges sa section */
+}
+
+/* Labels */
+form label {
+    display: block; /* Ipakita ang label sa new line */
+    margin-bottom: 5px; /* Gamay nga space below sa label */
+    font-weight: bold; /* Bold para klaro nga label siya */
+    color: #555; /* Dark gray color, dili sakit sa mata */
+    font-family: 'Times New Roman', serif; /* Classic nga font sa labels */
+}
+
+/* Inputs, Selects, Textarea */
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form textarea,
+form select {
+    width: 100%; /* Full width gyud para aligned tanan */
+    padding: 5px; /* Comfortable padding sa sulod sa inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border, basic lang */
+    border-radius: 5px; /* Gamay nga curve sa inputs */
+}
+
+.add-godparent-btn {
+    background-color: #617cd6; /* Blue color, murag friendly ug professional */
+    color: white; /* White text para contrast */
+    padding: 10px 15px; /* Sakto ra nga padding sa button */
+    border: none; /* Walay border para clean look */
+    border-radius: 5px; /* Gamay curve sa button */
+    cursor: pointer; /* Mag pointer ang mouse para klaro clickable */
+    font-size: 16px; /* Dili gamay, dili sad dako ang font */
+    display: block; /* Para mag occupy siya full line */
+    margin: 10px auto 0 auto; /* Centered ang button */
+}
+
+/* Buttons */
+.register-btn {
+    width: 100%; /* Full width button para dako ug klaro */
+    padding: 12px; /* Dako2x nga padding para premium feel */
+    background-color: #4CAF50; /* Same green nga fresh looking */
+    color: white; /* White text for clean and readable look */
+    font-size: 18px; /* Slightly larger font size for importance */
+    border: none; /* Wala border for clean design */
+    border-radius: 8px; /* Gamay nga roundness */
+    cursor: pointer; /* Mouse pointer para klaro clickable */
+    margin-top: 10px; /* Space above the button */
+}
+
+.register-btn:hover {
+    background-color: #45a049; /* Slightly darker green pag-hover, para interactive */
+}
+
+/* Yellow update button style */
+.btn-update-yellow {
+    width: 100%; /* Full width button gihapon */
+    padding: 12px; /* Consistent padding */
+    background-color: #FFD700; /* Yellow color, attention getter */
+    color: black; /* Black text para readable sa yellow */
+    font-size: 18px; /* Sakto ra nga font size */
+    border: 2px solid #bfa500; /* Slightly darker yellow nga border */
+    border-radius: 8px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor gihapon */
+    margin-top: 10px; /* Space above the button */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Shadow effect for depth */
+}
+
+/* Remove godparent button style */
+.remove-godparent-btn {
+    background-color: #f44336; /* Red button, danger or delete action */
+    color: white; /* White text para readable gyapon */
+    border: none; /* Walay border para clean tan-awon */
+    border-radius: 4px; /* Gamay lang nga curve */
+    padding: 5px 10px; /* Sakto nga padding */
+    cursor: pointer; /* Pointer cursor for clickables */
+    display: block; /* Full block display */
+    margin: 0 auto; /* Centered ang button */
+    text-align: center; /* Text centered */
+    margin-bottom: 2rem; /* Dako2x nga bottom margin for spacing */
+}
+
+.btn-update-yellow:hover {
+    background-color: #e6c200; /* Darker yellow pag-hover para feel nimo nga naay action */
+}
+
+/* Footer */
+footer {
+    margin-top: 30px; /* Space on top sa footer */
+    text-align: center; /* Centered footer text */
+    font-size: 14px; /* Smaller font size kay footer ra man */
+    color: #777; /* Light gray text color */
+}
+
+/* Church Info */
+.church-info {
+    background-color: #d9f2d9; /* Light green background para calm ug soothing */
+    padding: 15px; /* Padding inside the church info box */
+    margin-bottom: 20px; /* Space below the church info section */
+    border-radius: 10px; /* Curved edges para soft tan-awon */
+}
